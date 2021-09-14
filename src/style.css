@@ -1,2 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
 
+.logo {
+ width: 100%;
+ height: 100px;   
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+    
+}
