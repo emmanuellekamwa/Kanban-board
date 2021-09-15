@@ -1,6 +1,12 @@
 import itemsCounter from "../itemsCounter";
 
-const { getByTestId } = require('@testing-library/dom');
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const dom = JSDOM.fragment(`<!DOCTYPE html><ul class="meals-list">
+<li class="meal-item">
+    <span class="item-count"></span>
+</li>
+</ul>`);
 
 const meals = [
     {
@@ -21,25 +27,14 @@ const meals = [
 ];
 
 describe('Items Counter', () => {
-    beforeEach(() => {
-      document.body.innerHTML = `
-      <ul class="meals-list">
-        <li class="meal-item">
-            <span data-testid="item-count"></span>
-        </li>
-      </ul>
-      `;
-    });
     it('counts the number of items', () => {
-      const container = document.body;
-      const element = getByTestId(container, 'item-count');
+      const element = dom.querySelector('.item-count');
       const count = itemsCounter(meals, element);
       expect(count).toBe(3);
     });
   
     it('updates the UI with the number of item counts', () => {
-      const container = document.body;
-      const element = getByTestId(container, 'item-count');
+      const element = dom.querySelector('.item-count');
       itemsCounter(meals, element);
       expect(element.textContent).toBe(' (3)');
     });

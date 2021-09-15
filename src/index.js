@@ -1,5 +1,6 @@
 import displayMeals from './Js/utils/display';
 import { fetchLikes, fetchMeals, postLike } from './Js/utils/api';
+import itemsCounter from './Js/utils/itemsCounter';
 import './style.css';
 
 document.querySelector('.meals-list').addEventListener('click', async (event) => {
@@ -16,6 +17,8 @@ document.querySelector('.meals-list').addEventListener('click', async (event) =>
 const initialize = async () => {
     const meals = await fetchMeals();
     const likes = await fetchLikes();
+    const countElement = document.querySelector('.count');
+    itemsCounter(meals, countElement);
     displayMeals(meals, likes);
 };
 initialize();
