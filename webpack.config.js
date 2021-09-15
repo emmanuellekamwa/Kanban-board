@@ -7,10 +7,11 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
+    port: 9000,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Kanban-board',
+      template: './src/index.html',
     }),
   ],
   output: {
@@ -20,6 +21,12 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(js|jsx)$/i,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
