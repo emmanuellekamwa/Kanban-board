@@ -29,6 +29,7 @@ const displayMeals = (meals, likes) => {
         const details = document.createElement('div');
         details.classList.add('details');
         const likesDiv = document.createElement('div');
+        likesDiv.classList.add('likes-div');
 
         likesDiv.append(likeBtn, likesCount)
         details.append(name, likesDiv);
