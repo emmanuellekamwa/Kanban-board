@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
 
 body {
-  background-image: linear-gradient(to right bottom, #ffffff, #def5ff, #91f4ff, #00f3f3, #12eba9);
-  background-repeat: no-repeat;
+  background: #E55D87; 
+  background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);  
+  background: linear-gradient(to right, #5FC3E4, #E55D87);   
+  font-family: 'Noto Serif', serif;
+  font-size: 18px;
 }
 
 .main {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -19,12 +22,24 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;  
+  width: 60%;
+  margin: 0 auto;
+  height: 10vh;
+  padding: 10px 0;
+  width: 100%;
+  box-shadow: rgb(0 0 0 / 25%) 0 54px 55px, rgb(0 0 0 / 12%) 0 -12px 30px, rgb(0 0 0 / 12%) 0 4px 6px, rgb(0 0 0 / 17%) 0 12px 13px, rgb(0 0 0 / 9%) 0 -3px 5px;
 }
 
 .nav-link {
   text-decoration: none;
   padding: 25px;
   color: black;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.nav-link:hover {
+  color:#4dff56;
 }
 
 .footer {
@@ -46,4 +61,25 @@ p {
 .meal-img {
   max-width: 100%;
   object-fit: contain;
+}
+
+.meal-img:hover {
+  box-shadow: 0 4px 8px 0 rgba(9, 211, 177, 0.685), 0 6px 20px 0 rgba(9, 154, 211, 0.644);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px;
+  background: #c10c06;
 }
