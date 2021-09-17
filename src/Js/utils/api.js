@@ -1,4 +1,6 @@
-const Meals_URL = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert'
+// const Meals_URL = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert'
+
+const Meals_URL = 'https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast'
 const API_KEY = 'a2VutWNLP515ay0nBLQw';
 const INVOLVEMENT_URL = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${API_KEY}/likes/`
 

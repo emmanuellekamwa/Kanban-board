@@ -1,5 +1,6 @@
+import commentPop from "./commentPop.js";
+
 const displayMeals = (meals, likes) => {
-    console.log(meals);
     const mealsList = document.querySelector('.meals-list');
     mealsList.textContent = '';
     meals.forEach((meal) => {
@@ -14,8 +15,13 @@ const displayMeals = (meals, likes) => {
         name.classList.add('meal-name');
         name.textContent = strMeal;
         const commentBtn = document.createElement('button');
+
         commentBtn.textContent = 'COMMENTS';
 
+        commentBtn.addEventListener('click', () => {
+           commentPop(meal)
+        });
+     
         
         const likeBtn = document.createElement('i');
         likeBtn.classList.add('far');
@@ -35,7 +41,9 @@ const displayMeals = (meals, likes) => {
         details.append(name, likesDiv);
         item.append(image, details, commentBtn);
         mealsList.append(item);
-    });;
+    });
 }
+ 
+
 
 export default displayMeals;
