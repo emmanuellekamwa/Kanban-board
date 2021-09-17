@@ -2,12 +2,18 @@
   "name": "Kanban-board",
   "version": "1.0.0",
   "description": "",
+ develop
   "private": true,
   "scripts": {
     "test": "jest",
     "start": "webpack serve --open",
     "watch": "webpack --watch",
     "build": "webpack"
+
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+ main
   },
   "repository": {
     "type": "git",
@@ -19,6 +25,7 @@
   "bugs": {
     "url": "https://github.com/emmanuellekamwa/Kanban-board/issues"
   },
+ develop
   "homepage": "https://github.com/emmanuellekamwa/Kanban-board#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
@@ -41,4 +48,7 @@
     "jsdom": "^17.0.0",
     "lodash": "^4.17.21"
   }
+
+  "homepage": "https://github.com/emmanuellekamwa/Kanban-board#readme"
+ main
 }
