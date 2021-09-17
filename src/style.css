@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
 
 body {
-  background: #E55D87; 
+  background: #E55D87;  
   background: -webkit-linear-gradient(to right, #6dc7e6, #E55D87);  
-  background: linear-gradient(to right, #6dc7e6, #E55D87);   
+  background: linear-gradient(to right, #6dc7e6, #E55D87);  
   font-family: 'Noto Serif', serif;
-  font-size: 18px;
+  font-size: 18px; 
 }
 
 .main {
   width: 85%;
   margin: 0 10px 10px 64px;
   padding: 20px 0;
+}
+
+.meal-item {
+  border: solid;
+  padding: 20px;
+  
 }
 
 .logo {
@@ -284,7 +290,7 @@ tr:nth-child(even) {
   }
 
   .comment-button {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
 
   .footer {
