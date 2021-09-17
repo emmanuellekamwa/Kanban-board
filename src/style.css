@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
 
 body {
-  background: #E55D87;  
-  background: -webkit-linear-gradient(to right, #6dc7e6, #E55D87);  
-  background: linear-gradient(to right, #6dc7e6, #E55D87);  
+  background: #e55d87;
+  background: -webkit-linear-gradient(right, #6dc7e6, #e55d87);
+  background: linear-gradient(to right, #6dc7e6, #e55d87);
   font-family: 'Noto Serif', serif;
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 .main {
@@ -15,15 +15,14 @@ body {
 }
 
 .logo {
- width: 100%;
- height: 100px;   
+  width: 100%;
+  height: 100px;
 }
 
 .header {
   display: flex;
   justify-content: space-around;
-  align-items: center;  
-  width: 60%;
+  align-items: center;
   margin: 0 auto;
   height: 10vh;
   padding: 10px 0;
@@ -39,9 +38,8 @@ body {
   font-size: 1.3rem;
 }
 
-
 .nav-link:hover {
-  color:#4deaff;
+  color: #4deaff;
 }
 
 .footer {
@@ -156,7 +154,6 @@ i:hover {
 .td1 {
   min-width: 100px;
 }
-
 
 th {
   font-size: 1.2rem;
@@ -303,5 +300,3 @@ tr:nth-child(even) {
     padding: 0 20px;
   }
 }
-
-
