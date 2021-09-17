@@ -1,8 +1,8 @@
+import commentsCounter from './commentsCounter.js';
+import createTableRow from './createTableRow.js';
 import getComments from './getComments.js';
 import postComment from './postComment.js';
-import commentsCounter from './commentsCounter.js';
 import updateComments from './updateComments.js';
-import createTableRow from './createTableRow.js';
 
 const commentPop = (meal) => {
   const { idMeal, strMeal, strMealThumb } = meal;
@@ -22,7 +22,6 @@ const commentPop = (meal) => {
   closeButton.className = 'close';
   closeButton.innerHTML = '&times;';
   closeButton.addEventListener('click', () => {
-    //  document.querySelector('.overlay').classList.add('hide');
     overlay.remove();
   });
 
@@ -119,12 +118,6 @@ const commentPop = (meal) => {
   popUp.append(commentsContainer);
   popUp.appendChild(newCommentHeading);
   popUp.append(form);
-
-  // descriptionContainer,
-  // numberOfCommentsContainer,
-  // commentsContainer,
-  // newCommentHeading,
-  // form,
 
   overlay.appendChild(popUp);
   document.body.appendChild(overlay);
