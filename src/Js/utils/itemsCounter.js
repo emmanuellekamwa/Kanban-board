@@ -1,4 +1,4 @@
 export default (meals, element) => {
-    element.textContent = ` (${meals.length})`;
-    return meals.length; 
-}
+  element.textContent = ` (${meals.length})`;
+  return meals.length;
+};
