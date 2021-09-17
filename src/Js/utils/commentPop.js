@@ -22,7 +22,6 @@ const commentPop = (meal) => {
   closeButton.className = 'close';
   closeButton.innerHTML = '&times;';
   closeButton.addEventListener('click', () => {
-    //  document.querySelector('.overlay').classList.add('hide');
     overlay.remove();
   });
 
@@ -119,12 +118,6 @@ const commentPop = (meal) => {
   popUp.append(commentsContainer);
   popUp.appendChild(newCommentHeading);
   popUp.append(form);
-
-  // descriptionContainer,
-  // numberOfCommentsContainer,
-  // commentsContainer,
-  // newCommentHeading,
-  // form,
 
   overlay.appendChild(popUp);
   document.body.appendChild(overlay);
