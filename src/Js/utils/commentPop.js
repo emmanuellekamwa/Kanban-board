@@ -91,6 +91,7 @@ const commentPop = (meal) => {
       const date = `${day.getFullYear()}-${month}-${day.getDate()}`;
       const row = createTableRow('row', date, name, insight);
       commentsContainer.appendChild(row);
+      commentsObject.numberOfComments ||= 0;
       numberOfCommentsContainer.textContent = `Comments(${commentsObject.numberOfComments + 1})`;
       commentsObject.numberOfComments += 1;
       nameField.value = '';
