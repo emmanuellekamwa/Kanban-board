@@ -7,7 +7,7 @@ const updateComments = async (
   createTableRow,
   commentsObject,
 ) => {
-  const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/a2VutWNLP515ay0nBLQw/comments/?item_id=${idMeal}`;
+  const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/a2VutWNLP515ay0nBLQw/comments/?item_id=${idMeal}`
 
   const allComments = await getComments(url);
 

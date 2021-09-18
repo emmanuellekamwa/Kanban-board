@@ -1,8 +1,8 @@
+import commentsCounter from './commentsCounter.js';
+import createTableRow from './createTableRow.js';
 import getComments from './getComments.js';
 import postComment from './postComment.js';
-import commentsCounter from './commentsCounter.js';
 import updateComments from './updateComments.js';
-import createTableRow from './createTableRow.js';
 
 const commentPop = (meal) => {
   const { idMeal, strMeal, strMealThumb } = meal;
