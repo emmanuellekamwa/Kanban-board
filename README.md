@@ -23,7 +23,7 @@ To have this project on your local machine, just follow these steps:
 - Run `npm install` to install all the dependencies
 - Run `npm run start`
 
-## Authors
+## Author
 
 👤 **Emmanuelle Kamwa**
 
